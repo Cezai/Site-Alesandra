@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço Terapêutico - Alesandra Marten</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Terapia TRG em Pelotas. Atendimento emocional presencial e online. Agende sua sessão.">
+<meta name="keywords" content="terapia, TRG, terapia emocional, Pelotas, psicoterapia">
+<meta name="author" content="Alesandra Marten">
+<link rel="canonical" href="https://www.alesandraterapeuta.com.br">
+</head>
+<body>
+
+    <nav class="navbar">""
+        <div class="nav-links">
+            <a href="#inicio">Início</a>
+            <span class="divisor">|</span>
+            <a href="#ajuda">Autoavaliação</a>""
+            <span class="divisor">|</span>
+            <a href="#sobre">Sobre</a>
+            <span class="divisor">|</span>
+            <a href="#trg-test">Terapia TRG</a>
+            <span class="divisor">|</span>
+            <a href="#agende">Agendamento</a>
+        </div>
+    </nav>
+
+    <header class="hero" id="inicio">
+        <div class="hero-container">
+            <div class="hero-text fade-in">
+                <h1>Reprocessar o passado é o primeiro passo para viver o presente com leveza.</h1>
+                <p>Ofereço um espaço seguro e acolhedor para o cuidado emocional, utilizando a Terapia de Reprocessamento Generativo (TRG).</p>
+                <a href="https://wa.me/5553991525911?text=Olá,%20gostaria%20de%20agendar%20uma%20sessão" target="_blank" rel="noopener noreferrer" class="btn-primary">Agendar pelo WhatsApp</a>
+                <div class="hero-info">
+                    <span><i class="fa-solid fa-location-dot"></i> Presencial - Pelotas/RS</span>
+                    <span><i class="fa-solid fa-laptop"></i> Online</span>
+                </div>
+            </div>
+        </div>
+        <div class="wave-bottom">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z" fill="#F8F6F1"></path>
+            </svg>
+        </div>
+    </header>
+
+    <section class="ajuda" id="ajuda">
+        <div class="secao-titulo fade-in">
+            <h2>Você se identifica com essas situações?</h2>
+            <div class="detalhe-titulo"><span>◈</span></div>
+            <h3>Marque o que faz sentido para você e veja um direcionamento abaixo.</h3>
+        </div>
+
+        <div class="ajuda-container fade-in">
+            <div class="checklist-box">
+                <label class="check-item">
+                    <input type="checkbox" class="st-check">
+                    <span>Sinto ansiedade ou sobrecarga emocional</span>
+                </label>
+                <label class="check-item">
+                    <input type="checkbox" class="st-check">
+                    <span>Tenho dificuldade em lidar com meus sentimentos</span>
+                </label>
+                <label class="check-item">
+                    <input type="checkbox" class="st-check">
+                    <span>Passei por situações difíceis no passado</span>
+                </label>
+                <label class="check-item">
+                    <input type="checkbox" class="st-check">
+                    <span>Sinto que algo me trava, mas não sei o que é</span>
+                </label>
+                <label class="check-item">
+                    <input type="checkbox" class="st-check">
+                    <span>Tenho dificuldade em me conhecer melhor</span>
+                </label>
+                
+                <button onclick="calcularResultado(this)" class="btn-secondary" id="btn-resultado">Ver meu resultado</button>
+            </div>
+
+            <div class="resultado-container" id="resultado-avaliacao">
+                <div class="ajuda-image" id="img-auto">
+                    <img src="img/whatsapp-1.jpeg" alt="Mulher sorrindo leve" loading="lazy">
+                </div>
+                <div id="resultado-texto" class="resultado-texto" style="display:none;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="atendimentos-banner fade-in" id="atendimentos">
+        <h2>Atendimentos presenciais em Pelotas/RS e online</h2>
+        <div class="atendimentos-info">
+            <span><i class="fa-solid fa-location-dot"></i> <strong>Presencial:</strong> Rua Alberto Rosa, 455</span>
+            <span><i class="fa-solid fa-laptop"></i> <strong>Online:</strong> Google Meet ou WhatsApp</span>
+        </div>
+
+        <div class="card-gratuito">
+            <h3>Primeiro encontro: gratuito</h3>
+            <p>Nosso primeiro encontro é de 30 minutos, sem custo, para nos conhecermos melhor.</p>
+            <a href="https://wa.me/5553991525911?text=Olá,%20gostaria%20de%20agendar%20uma%20sessão" target="_blank" rel="noopener noreferrer" class="btn-primary">Quero começar minha terapia</a>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <div class="sobre-container fade-in">
+            <div class="sobre-image">
+                <img src="img/whatsapp-3.jpeg" alt="Foto da Terapeuta" loading="lazy">
+            </div>
+            <div class="sobre-text">
+                <h2>Sobre mim</h2>
+                <div class="detalhe-titulo-esq"></div>
+                <ul>
+                    <li>Graduada em Pedagogia – UCPEL</li>
+                    <li>Especialização em Metodologia do Ensino – UCPEL</li>
+                    <li>Especialização em Atendimento Educacional Especializado - FESL</li>
+                    <li>Mestrado em Educação – UFPEL</li>
+                    <li>Há mais de 30 anos trabalhando com educação</li>
+                    <li>Hipnoterapia - Não Verbal, Transes Hipnóticos e Clínica</li>
+                    <li><strong>Master Terapeuta TRG (CITRG 11.290)</strong></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sobre-resumo fade-in">
+            <p>Após 30 anos na educação, me especializei como Master Terapeuta TRG e hoje, como terapeuta emocional, auxilio pessoas a reprocessarem suas dores emocionais e encontrarem um caminho melhor.</p>
+        </div>
+    </section>
+
+    <section class="trg-test" id="trg-test">
+        <div class="secao-titulo fade-in">
+            <h2>Escreva algo que você deseja soltar</h2>
+            <div class="detalhe-titulo"><span>◈</span></div>
+            <p>Este é um pequeno espaço simbólico para você deixar ir um peso que carrega hoje.</p>
+        </div>
+
+        <div class="smoke-box fade-in">
+            <textarea id="smoke-input" placeholder="Escreva aqui seu sentimento, trauma ou peso..."></textarea>
+            <button id="btn-smoke" onclick="soltarSentimento()" class="btn-primary">Soltar</button>
+        </div>
+        
+        <div id="trg-explicacao" class="trg-explicacao" style="display:none;">
+            <p><strong>Você se sente um pouco mais leve?</strong></p>
+            <p>Isso que você acabou de fazer é um vislumbre do que trabalhamos na TRG. O reprocessamento ajuda o seu cérebro a "limpar" a carga emocional de eventos passados, permitindo que você siga em frente com mais leveza. Que tal darmos o próximo passo juntos?</p>
+        </div>
+    </section>
+
+    <section class="agende" id="agende">
+        <div class="secao-titulo fade-in">
+            <h2>Agende a sua sessão</h2>
+            <div class="detalhe-titulo"><span>◈</span></div>
+            <p>Reserve um momento só para você. Nossas sessões têm a <strong>duração de 1 hora</strong>, garantindo um espaço seguro, acolhedor e sem pressa para o seu cuidado emocional.</p>
+        </div>
+
+        <div class="contato-card fade-in">
+            <div class="contato-img">
+                <img src="img/whatsapp-4.jpeg" alt="Ambiente acolhedor" loading="lazy">
+            </div>
+            <div class="contato-info">
+                <ul>
+                    <li><i class="fa-brands fa-whatsapp"></i> (53) 99152-5911</li>
+                    <li><i class="fa-regular fa-envelope"></i> alelangemarten10@gmail.com</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Rua Alberto Rosa, 455, Pelotas/RS</li>
+                </ul>
+
+                <div class="audio-section">
+                    <p class="audio-title">Ouça uma mensagem de boas-vindas:</p>
+                    <div class="custom-audio-player">
+                        <audio id="meu-audio" src="img/audio.mp3"></audio> 
+                        
+                        <button id="audio-btn" class="audio-btn" onclick="toggleAudio()"><i class="fa-solid fa-play" id="audio-icon"></i></button>
+                        <div class="audio-progress" id="audio-progress" onclick="seekAudio(event)">
+                            <div class="audio-bar" id="audio-bar"></div>
+                        </div>
+                        <span class="audio-time" id="audio-time">0:00</span>
+                    </div>
+                </div>
+                
+                <a href="https://wa.me/5553991525911?text=Olá,%20gostaria%20de%20agendar%20uma%20sessão" target="_blank" rel="noopener noreferrer" class="btn-primary">Agendar pelo WhatsApp</a>
+                
+                <div class="redes-sociais">
+                    <a href="https://www.instagram.com/alesandramarten/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© <span id="ano-atual"></span> Terapia TRG | Site desenvolvido por Frederico Brião</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
