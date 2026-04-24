@@ -168,4 +168,5 @@ function seekAudio(event) {
     if(duration) {
         audio.currentTime = (clickX / width) * duration;
     }
+    document.getElementById('ano-atual').textContent = new Date().getFullYear();
 }
