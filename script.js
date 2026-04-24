@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+    document.getElementById('ano-atual').textContent = new Date().getFullYear();
+
     // 1. ROLAGEM SUAVE (Smooth Scroll)
     const linksInternos = document.querySelectorAll('.nav-links a[href^="#"]');
     linksInternos.forEach(link => {
@@ -168,5 +170,4 @@ function seekAudio(event) {
     if(duration) {
         audio.currentTime = (clickX / width) * duration;
     }
-    document.getElementById('ano-atual').textContent = new Date().getFullYear();
 }
