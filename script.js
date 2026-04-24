@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.getElementById('ano-atual').textContent = new Date().getFullYear();
 
-    // 1. ROLAGEM SUAVE (Smooth Scroll)
+    
     const linksInternos = document.querySelectorAll('.nav-links a[href^="#"]');
     linksInternos.forEach(link => {
         link.addEventListener('click', function(e) {
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // 2. EFEITO DE APARECER AO ROLAR
+    
     const fadeElements = document.querySelectorAll('.fade-in');
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.observe(element);
     });
 
-    // 5. INICIALIZAÇÃO DO ÁUDIO (Garante que mostra o tempo total se o áudio carregar rápido)
+    
     const audio = document.getElementById('meu-audio');
     const audioTime = document.getElementById('audio-time');
     
@@ -38,8 +38,6 @@ document.addEventListener("DOMContentLoaded", function() {
             let minutes = Math.floor(audio.duration / 60);
             let seconds = Math.floor(audio.duration % 60);
             if (seconds < 10) seconds = '0' + seconds;
-            // Se quiser que comece mostrando o tempo total, descomente a linha abaixo
-            // audioTime.innerText = minutes + ':' + seconds; 
         });
 
         audio.addEventListener('timeupdate', () => {
@@ -65,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
-// 3. FUNÇÃO DA AUTOAVALIAÇÃO
+
 function calcularResultado(btnElement) {
     const checkboxes = document.querySelectorAll('.st-check');
     let marcados = 0;
@@ -75,7 +73,6 @@ function calcularResultado(btnElement) {
     });
 
     let mensagem = "";
-    // Resposta exata dependendo de quantos itens a pessoa marcou
     switch(marcados) {
         case 0:
             mensagem = "Você parece estar em um momento de maior equilíbrio agora, o que é maravilhoso! De qualquer forma, lembre-se de que o autoconhecimento é uma jornada contínua e a terapia também é um ótimo espaço para a manutenção do bem-estar.";
@@ -122,7 +119,7 @@ function calcularResultado(btnElement) {
     }, 400); 
 }
 
-// 4. FUNÇÃO DE SOLTAR O SENTIMENTO (EFEITO FUMAÇA)
+
 function soltarSentimento() {
     const inputArea = document.getElementById('smoke-input');
     const btnSmoke = document.getElementById('btn-smoke');
@@ -144,7 +141,7 @@ function soltarSentimento() {
     }, 1500);
 }
 
-// 6. FUNÇÕES DE CONTROLE DO ÁUDIO PERSONALIZADO
+
 function toggleAudio() {
     const audio = document.getElementById('meu-audio');
     const audioIcon = document.getElementById('audio-icon');
